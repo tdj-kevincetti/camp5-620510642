@@ -5,7 +5,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 //firebase
-
+import { AngularFireModule } from '@angular/fire';
+import { environment } from './environment';
 //component
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -19,7 +20,8 @@ import { DisplayTweetComponent } from './display-tweet/display-tweet.component';
     {path: "time-line",component: TimeLineComponent},
     {path: "add-tweet",component: AddTweetComponent},
   ]),
-  ReactiveFormsModule 
+  ReactiveFormsModule ,
+  AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   declarations: [ 
     AppComponent, 
