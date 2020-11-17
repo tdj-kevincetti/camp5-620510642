@@ -18,6 +18,9 @@ nav a:hover{
 .header{
   display: flex;
   justify-content: center;
+  background-color: #64dd17;
+  border: 3px solid #c6ff00;
+  border-radius: 15px;
 }
 .content{
   background-color: yellowgreen;
