@@ -1,8 +1,9 @@
 nav {
+  background-color: #cddc39;
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
-  padding: 20px;
+  border: 1px solid #8bc34a;
+  padding: 15px;
 }
 nav a{
   text-decoration: none;
