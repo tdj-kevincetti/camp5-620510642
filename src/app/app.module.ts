@@ -12,6 +12,7 @@ import { HelloComponent } from './hello.component';
 import { AddTweetComponent } from './add-tweet/add-tweet.component';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { HomeComponent } from './home/home.component';
+import { DisplayTweetComponent } from './display-tweet/display-tweet.component';
 //service
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
@@ -24,7 +25,7 @@ import { HomeComponent } from './home/home.component';
     HelloComponent, 
     AddTweetComponent, 
     TimeLineComponent, 
-    HomeComponent ],
+    HomeComponent, DisplayTweetComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
