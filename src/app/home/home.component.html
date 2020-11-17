@@ -1,10 +1,12 @@
 <div>
   <div class="header">
-  <h1>Twitty</h1>
+    <h1>Twitty</h1>
   </div>
   <nav>
-  <a routerLink = "time-line">Time Line</a>
-  <a routerLink = "add-tweet">Add Tweet</a>
+  <a routerLink = "/time-line">Time Line</a>
+  <a routerLink = "/add-tweet">Add Tweet</a>
   </nav>
-  <div class = "content"></div>
+  <div class = "content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
