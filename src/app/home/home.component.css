@@ -13,7 +13,7 @@ nav a{
   color: green;
 }
 nav a:hover{
-  color: blue;
+  color: #9e9d24;
   text-decoration: underline;
 }
 .header{

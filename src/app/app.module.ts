@@ -14,6 +14,7 @@ import { AddTweetComponent } from './add-tweet/add-tweet.component';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { HomeComponent } from './home/home.component';
 import { DisplayTweetComponent } from './display-tweet/display-tweet.component';
+import { FirebaseService } from './firebase.service';
 //service
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
@@ -29,6 +30,7 @@ import { DisplayTweetComponent } from './display-tweet/display-tweet.component';
     AddTweetComponent, 
     TimeLineComponent, 
     HomeComponent, DisplayTweetComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [FirebaseService]
 })
 export class AppModule { }
