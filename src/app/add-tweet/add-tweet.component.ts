@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl,FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-add-tweet',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-tweet.component.css']
 })
 export class AddTweetComponent implements OnInit {
-
+  form = new FormGroup({
+    name: new FormControl(''),
+    msg: new FormControl('')
+  })
   constructor() { }
 
   ngOnInit() {

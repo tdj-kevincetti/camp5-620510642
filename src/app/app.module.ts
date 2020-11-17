@@ -1,7 +1,7 @@
 //modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 //firebase
@@ -18,7 +18,8 @@ import { DisplayTweetComponent } from './display-tweet/display-tweet.component';
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
     {path: "time-line",component: TimeLineComponent},
     {path: "add-tweet",component: AddTweetComponent},
-  ]) 
+  ]),
+  ReactiveFormsModule 
   ],
   declarations: [ 
     AppComponent, 
