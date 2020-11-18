@@ -18,9 +18,6 @@ export class AddTweetComponent implements OnInit {
   ngOnInit() {
   }
   onTweet(){
-    if (this.form.value.name==""){
-      alert("Please put your name!")
-    }
     this.firebaseService.addTweet(
       this.form.value.name,
       this.form.value.msg
