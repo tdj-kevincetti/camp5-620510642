@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core'
 import { Tweet } from '../tweet'
+import {firebaseService} from ''
 @Component({
   selector: 'app-display-tweet',
   templateUrl: './display-tweet.component.html',
@@ -38,6 +39,16 @@ export class DisplayTweetComponent implements OnInit {
     }
 
     return `${diffDay} day(s) ago.`;
+  }
+  del(){
+    if(window.confirm("confirm")){
+      this.firebaseService.deleteTweet(this.tweet.id).then(()=>{
+        alert('deleteComplete')
+      })
+      .catch(err =>{
+        alert("deleteFailure")
+      })
+    }
   }
 
 }
