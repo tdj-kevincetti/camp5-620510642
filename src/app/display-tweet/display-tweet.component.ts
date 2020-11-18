@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core'
 import { Tweet } from '../tweet'
-import {firebaseService} from ''
+import { FirebaseService } from '../firebase.service'
 @Component({
   selector: 'app-display-tweet',
   templateUrl: './display-tweet.component.html',
