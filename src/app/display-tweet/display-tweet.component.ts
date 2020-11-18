@@ -39,8 +39,11 @@ export class DisplayTweetComponent implements OnInit {
     if(diffHour < 24){
       return `${diffHour} hour(s) ago.`;
     }
-
-    return `${diffDay} day(s) ago.`;
+    if(diffWeek<7)
+      return `${diffDay} day(s) ago.`;
+    if(diffYear<52)
+      return `${diffWeek} week(s) ago.`
+    return `${diffYear} year(s) ago.`
   }
   del(){
     if(window.confirm("confirm")){
