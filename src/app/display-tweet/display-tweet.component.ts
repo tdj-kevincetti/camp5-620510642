@@ -21,6 +21,7 @@ export class DisplayTweetComponent implements OnInit {
   timeAgo(val: Date){
     const now = new Date();
     const diff = Math.abs(now.getTime() - val.getTime());
+    const diffYear = Math.floor(diff/(1000*3600*24*365))
     const diffWeek = Math.floor(diff/(1000*3600*24*7))
     const diffDay = Math.floor(diff / (1000* 3600 *24));
     const diffHour = Math.floor(diff / (1000 * 3600));
