@@ -44,7 +44,9 @@ export class DisplayTweetComponent implements OnInit {
   }
   del(){
     if(window.confirm("confirm")){
-      this.firebaseService.deleteTweet(this.tweet.id).then(()=>{
+      this.firebaseService
+      .deleteTweet(this.tweet.id)
+      .then(()=>{
         alert('deleteComplete')
       })
       .catch(err =>{
