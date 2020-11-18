@@ -20,7 +20,7 @@ import { DisplayTweetComponent } from './display-tweet/display-tweet.component';
 import { FirebaseService } from './firebase.service';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
-    {path: "time-line",component: TimeLineComponent},
+    {path: "",component: TimeLineComponent},
     {path: "add-tweet",component: AddTweetComponent},
   ]),
   ReactiveFormsModule ,
