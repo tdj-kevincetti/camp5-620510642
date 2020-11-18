@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl,FormGroup} from '@angular/forms';
-
+import {FirebaseService} from '../firebase.service'
 @Component({
   selector: 'app-add-tweet',
   templateUrl: './add-tweet.component.html',
