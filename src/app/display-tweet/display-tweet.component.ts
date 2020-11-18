@@ -21,10 +21,10 @@ export class DisplayTweetComponent implements OnInit {
   timeAgo(val: Date){
     const now = new Date();
     const diff = Math.abs(now.getTime() - val.getTime());
-    const diffDay = Math.ceil(diff / (1000* 3600 *24));
-    const diffHour = Math.ceil(diff / (1000 * 3600));
-    const diffMinute = Math.ceil(diff / (1000 * 60));
-    const diffSecond = Math.ceil(diff / 1000);
+    const diffDay = Math.floor(diff / (1000* 3600 *24));
+    const diffHour = Math.floor(diff / (1000 * 3600));
+    const diffMinute = Math.floor(diff / (1000 * 60));
+    const diffSecond = Math.floor(diff / 1000);
 
     if(diffSecond < 60){
       return "Just now.";
