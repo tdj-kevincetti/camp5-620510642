@@ -9,7 +9,7 @@ import { FirebaseService } from '../firebase.service'
 })
 export class DisplayTweetComponent implements OnInit {
 
-  constructor() { }
+  constructor(private firebaseService: FirebaseService) { }
   @Input() tweet: Tweet;
   ngOnInit() {
     this.tweet = {
