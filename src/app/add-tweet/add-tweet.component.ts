@@ -22,6 +22,6 @@ export class AddTweetComponent implements OnInit {
       this.form.value.name,
       this.form.value.msg
     )
-    this.router.navigate(['time-line'])
+    this.router.navigate(['/'])
   }
 }
