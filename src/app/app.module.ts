@@ -14,8 +14,9 @@ import { AddTweetComponent } from './add-tweet/add-tweet.component';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { HomeComponent } from './home/home.component';
 import { DisplayTweetComponent } from './display-tweet/display-tweet.component';
-import { FirebaseService } from './firebase.service';
+
 //service
+import { FirebaseService } from './firebase.service';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
     {path: "time-line",component: TimeLineComponent},
